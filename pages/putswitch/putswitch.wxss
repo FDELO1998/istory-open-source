@@ -1,0 +1,49 @@
+.top{
+  position: absolute;
+  z-index: -1;
+  font-size: 25rpx;
+  color: #4444;
+  top: 50rpx;
+  left: 70rpx;
+}
+.A{
+  margin: 20rpx 0 0 0;
+ border: 1px solid white;
+ background: #ffffff;
+}
+.last-p{
+    width:110rpx;
+    height: 110rpx;
+    margin: 10rpx 0 0 20rpx;
+     float: left;
+    border-radius: 50%;
+}
+.author{
+  width: 600rpx;
+ height: 112rpx;
+ border-bottom: 1rpx solid #D5D5D5;
+ margin: 20rpx 0 0 150rpx;
+}
+.author-1{
+  font-size: 34rpx;
+ font-family: PingFang SC;
+ color: #444444;
+ margin: 10rpx 0 0 40rpx;
+}
+.author-motto{
+   font-size: 20rpx;
+ font-family: PingFang SC;
+ color: #888888;
+ margin: 15rpx 0 0 40rpx;
+}
+.author-button{
+  width: 128rpx;
+  height: 55rpx;
+float: right;
+  font-size: 25rpx;
+  color: #444444;
+  margin: 20rpx 50rpx 0 0;
+ background: #4444;
+ line-height: 50rpx;
+text-align: center;
+}

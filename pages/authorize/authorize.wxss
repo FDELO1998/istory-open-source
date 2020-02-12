@@ -1,0 +1,44 @@
+.first{
+  width: 50%;
+  height: 40%;
+  text-align: center;
+  position: fixed;
+  top: 15%;
+  left: 25%;
+}
+.first image{
+  border-radius: 50%;
+  width: 150rpx;
+  height: 150rpx;
+}
+.one{
+     font-family: 'STKaiti';
+  font-size: 50rpx;
+  font-weight: bold;
+}
+.two{
+font-size: 34rpx;
+ font-family: 'KaiTi';
+  font-style: rgb(104, 103, 103);
+}
+.content{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9;
+
+}
+.button{
+  position: fixed;
+  bottom: 180rpx;
+  width: 360rpx;
+  height: 80rpx;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 30rpx;
+  border: 1px solid #888888;
+  border-radius: 20rpx;
+  z-index: 99;
+}

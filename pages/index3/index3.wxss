@@ -1,0 +1,180 @@
+/* pages/index3/index3.wxss */
+.page{
+   width: 106rpx;
+  height: 192rpx;
+  float: left;
+   margin: 10rpx 30rpx 40rpx 40rpx;
+
+}
+.yifabu{
+  width: 106rpx;
+  height: 192rpx;
+ 
+}
+.title{
+  font-style: #888888;
+  font-weight: bold;
+  width: 86rpx;
+  height: 6rpx;
+  position: absolute;
+  margin: 25rpx 0 0 8rpx;
+  overflow: hidden; 
+  z-index: 5;
+  font-size: 5rpx;
+}
+.title2{
+  color: #444444;
+  position: absolute;
+  margin: 200rpx 0 0 0;
+  width: 106rpx;
+  height: 28rpx;
+  overflow: hidden;
+   font-size: 18rpx;
+}
+
+.article{
+  font-style: #444444;
+  width: 86rpx;
+  height: 130rpx;
+  line-height: 7rpx;
+  position: absolute;
+  margin: 40rpx 0 0 10rpx;
+  overflow: hidden; 
+  z-index: 5;
+  font-size: 4rpx;
+}
+#tu1{
+  width: 106rpx;
+  height: 50rpx;
+  position: absolute;
+  z-index: 2;
+  margin: 0;
+  
+}
+#tu2{
+  width: 106rpx;
+  height: 50rpx;
+  position: absolute;
+  margin: 142rpx 0 0 0;
+ z-index: 2;
+ 
+}
+.author{
+  height: 190rpx;
+  width:660rpx;
+  border-bottom: 2rpx solid #D6D6D6;
+  margin: 5rpx 0 0 38rpx;
+}
+.author-image{
+    width:146rpx;
+    height: 136rpx;
+      position: absolute;
+    border-radius: 8rpx;
+}
+.author .people{
+  position: absolute;
+  left: 220rpx;
+  font-size: 20rpx;
+  color: #888888;
+  line-height: 50rpx;
+}
+.people .name{
+  color: #444444;
+  font-size: 34rpx;
+  font-weight: 400;
+  
+}
+#fans{
+  color: #00D69F
+}
+.sw{
+  width: 100%;
+  z-index: 10;
+  margin: 20rpx 0 0 0;
+}
+.bind{
+ width:102%;
+ height: 60rpx;
+  z-index: 10;
+  position: absolute;
+  
+}
+.top{
+  top:0;
+}
+.bottom{
+   bottom: 0;
+}
+.swiper-tab {
+
+display: flex;
+z-index: 10;
+background-color: #fff;
+flex-direction: row;
+line-height: 60rpx;
+
+width: 100%;
+}
+scroll-view{
+  height:100%;
+
+}
+.swiper{
+ width: 100%;
+  height: 230rpx;
+  background-color: #fff;
+overflow: hidden;
+}
+.thems{
+width: 250rpx;
+  text-align: center;
+  margin: 0 50rpx 0 50rpx;
+font-size: 28rpx;
+color: #888888;
+
+}
+.on{
+  color: #00D8A0;
+  border-color: #00D8A0 ;
+}
+.swiper image{
+  width: 106rpx;
+  height: 192rpx;
+  margin: 25rpx 30rpx 0 45rpx;
+ 
+}
+.focus-author{
+  width: 600rpx;
+ height: 112rpx;
+ border-bottom: 1rpx solid #D5D5D5;
+ line-height: 112rpx;
+ font-size: 34rpx;
+ font-family: PingFang SC;
+color: #444444;
+ margin: 70rpx 0 0 150rpx;
+}
+.myfans{
+  width: 600rpx;
+ height: 112rpx;
+ border-bottom: 1rpx solid #D5D5D5;
+ line-height: 112rpx;
+ font-size: 34rpx;
+color: #444444;
+ margin: 0rpx 0 0 150rpx;
+}
+.flower{
+  width: 600rpx;
+ height: 112rpx;
+
+ line-height: 112rpx;
+ font-size: 34rpx;
+color: #444444;
+ margin: 0rpx 0 0 150rpx;
+}
+.last-p{
+    width:60rpx;
+    height: 60rpx;
+    margin: 30rpx 0 0 35rpx;
+     float: left;
+    border-radius: 8rpx;
+}

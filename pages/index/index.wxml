@@ -1,0 +1,110 @@
+
+<view class="page" bindtouchend='touchend' bindtouchstart='touchstart'>
+<wxs src="../wxs/subutil.wxs" module="tools" />
+<!--侧滑栏-->
+<view class='page-tab'>
+
+<view class="tab-little"><navigator url='/pages/picture/picture?image=https://mystoryinn.com/image/1.png'>#读后感</navigator></view>
+
+<view class="tab-little"><navigator url='/pages/picture/picture?image=https://mystoryinn.com/image/9.png'>#热文-继父</navigator></view>
+<view class="tab-little"><navigator url='/pages/picture/picture?image=https://mystoryinn.com/image/8.png'>#青春</navigator></view>
+<view class="tab-little"><navigator url='/pages/picture/picture?image=https://mystoryinn.com/image/7.png'>#知乎高赞故事</navigator></view>
+<view class="tab-little"><navigator url='/pages/picture/picture?image=https://mystoryinn.com/image/6.png'>#雪-余秋雨</navigator></view>
+
+<block wx:if="{{user_name ===''}}">
+      <navigator>
+        <view class='user_name'>分类</view>
+      </navigator>
+    </block>
+</view>
+<view class="bg" bindtap='hideview' style='display:{{display}}'></view>
+<!--顶部导航栏-->
+ <view class='home' style="{{translate}}">
+
+<view class="swiper-tab" >
+<view class="tab-item {{currentTab=='0' ? 'on' : ''}}" data-current='0' bindtap="swichNav">
+<image src='../img/fenlei.png' class='img' bindtap='showview'></image> 推荐</view>
+ 
+<view class="tab-item {{currentTab=='1' ?'on':''}}" data-current='1'  bindtap="swichNav">关注</view>
+ 
+</view>
+
+<swiper class="swiper" current="{{currentTab}}" duration="200" bindchange="swiperChange"  style="height:{{scrollHeight+72}}rpx;">
+ 
+<swiper-item >
+ 
+<view class="tab-two">
+
+<view class="tab-little"><navigator url='/pages/picture/picture?image=https://mystoryinn.com/image/11.png'>#樱花盛开时</navigator></view>
+<view class="tab-little"><navigator url='/pages/picture/picture?image=https://mystoryinn.com/image/14.png'>#龙族v出版</navigator></view>
+<view class="tab-little"><navigator url='/pages/picture/picture?image=https://mystoryinn.com/image/12.png'>#旅行记</navigator></view>
+<view class="tab-little"><navigator url='/pages/picture/picture?image=https://mystoryinn.com/image/10.png'>#恋爱</navigator></view>
+<view class="tab-little"><navigator url='/pages/picture/picture?image=https://mystoryinn.com/image/13.png'>#读后感</navigator></view>
+</view>
+
+<scroll-view scroll-y  style="height:{{scrollHeight}}rpx;" scroll-top="{{scrollTop}}" bindscrolltolower="bindDownLoad" >
+ 
+<!-- <view class='page' wx:for="{{imageurl}}" wx:key="id" wx:for-item="item">
+<view style="background:url('{{item.background}}');background-size:100% 100%;" class='yifabu'>
+<image id='tu1' src="{{item.begin}}"></image> -->
+
+
+<view wx:for = "{{content}}" wx:for-item="item" wx:key="item[9]" data-cont="{{item}}" bindtap='gotosightsee' >
+ <view class='main-text'>
+ <image src="{{item[8]}}" class='img'></image>
+ <text id='one'>{{item[2]}}</text><text class='tab-little1'><text id='sign'>{{item[0]}}</text></text>
+ <view class='two'>
+ <image src="../img/liulan.png" class='tab-img'></image><text>{{item[12]}}</text>
+ <image src="../img/xihuan.png" class='tab-img'></image><text>{{item[13]}}</text>
+ <image src="../img/xiaoxi.png" class='tab-img'></image><text>{{item[14]}}</text>
+  </view>
+  <view id='content'>{{tools.sub(item[3])}}</view>
+  <view class='author'><image src='{{item[7]}}'></image>
+  <view class='author-text'>
+  <view class='author-name'>{{item[11]}}</view>
+  <view >{{item[10]}}</view>
+  </view>
+  </view>
+ </view>
+
+</view>
+ </scroll-view>
+
+
+</swiper-item>
+ 
+ 
+<swiper-item>
+<scroll-view scroll-y  style="height:{{scrollHeight}}rpx;" scroll-top="{{scrollTop}}" bindscrolltolower="bindDownLoad2" >
+ 
+<!-- <view class='page' wx:for="{{imageurl}}" wx:key="id" wx:for-item="item">
+<view style="background:url('{{item.background}}');background-size:100% 100%;" class='yifabu'>
+<image id='tu1' src="{{item.begin}}"></image> -->
+
+<text class='top'>--您暂无关注的作者的文章</text>
+<view wx:for = "{{content2}}" wx:for-item="item" wx:key="item[9]" data-cont="{{item}}" bindtap='gotosightsee' >
+ <view class='main-text'>
+ <image src="{{item[8]}}" class='img'></image>
+ <text id='one'>{{item[2]}}</text><text class='tab-little1'><text id='sign'>{{item[0]}}</text></text>
+ <view class='two'>
+ <image src="../img/liulan.png" class='tab-img'></image><text>{{item[12]}}</text>
+ <image src="../img/xihuan.png" class='tab-img'></image><text>{{item[13]}}</text>
+ <image src="../img/xiaoxi.png" class='tab-img'></image><text>{{item[14]}}</text>
+  </view>
+  <view id='content'>{{item[3]}}</view>
+  <view class='author'><image src='{{item[7]}}'></image>
+  <view class='author-text'>
+  <view class='author-name'>{{item[11]}}</view>
+  <view >{{item[10]}}</view>
+  </view>
+  </view>
+ </view>
+
+</view>
+ </scroll-view>
+
+
+</swiper-item>
+</swiper>
+</view>
+</view>

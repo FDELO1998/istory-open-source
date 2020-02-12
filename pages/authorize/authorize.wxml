@@ -1,0 +1,13 @@
+<view class='first'>
+<image src='https://mystoryinn.com/image/elements/logo3.jpg'></image>
+<view class='one'>故事栈</view>
+<view class='two'>致敬每一位渴望写作的平凡小说家</view>
+</view>
+
+<view wx:if="canIUse">
+<view class='content'>
+<!-- <button class='button' open-type='getUserInfo' lang='zh_CN' bindgetuserinfo='bingGetUserInfo'>开始体验</button> -->
+</view>
+</view>
+<view wx:else>请升级微信版本</view>
+

@@ -1,0 +1,14 @@
+ <canvas canvas-id='mycanvas' style='width:750rpx;height:{{textheight2}}' hidden='{{canvashidden}}'></canvas>
+ <view class='page' style="background:url('{{background}}');background-size:100% 100%">
+<image src='{{begin}}' class='tu1'></image>
+<view class='text'>
+<view class='sign'>{{signtext}}</view>
+<view class='ttext' bindtap='usr'>{{title}}</view>
+
+<view class='ctext' >{{article}}</view>
+
+<image src='{{bottom}}' class='tu2'></image>
+
+</view>
+</view>
+<view class='put'><button class='put-text' bindtap='saveImageToPhotosAlbum'>一键生成图片</button><button class='put-text' bindtap='adelete'>删除文章</button></view>

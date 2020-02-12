@@ -1,0 +1,94 @@
+<!--pages/index3/index3.wxml-->
+<view class='author'>
+<image src='{{avatarUrl}}'class='author-image'></image>
+<view class='people'>
+<view class='name' bindtap="autho">{{nickName==0?"点击登录":nickName}}</view>
+<view>学习使我快乐</view>
+<view><text>关注：<text id='fans'> {{focu}}</text></text>
+      <text style="margin: 0 0 0 50rpx;">粉丝：<text id='fans'> {{fans}} </text></text>
+      </view>
+
+      </view>
+      </view>
+ <view class="sw  hide{{showView?'':'show'}}">
+
+<view class="swiper-tab" display="{{display}}">
+<view class="thems {{currentTab==0 ? 'on' : ''}}" data-current="0" bindtap="swichNav">我发布的</view>
+<view class="thems {{currentTab==1 ? 'on' : ''}}" data-current="1" bindtap="swichNav">我的收藏</view>
+<view class="thems {{currentTab==2 ? 'on' : ''}}" data-current="2" bindtap="swichNav">草稿箱</view>
+</view>
+
+<swiper class="swiper" current="{{currentTab}}" duration="200" bindchange="swiperChange">
+<!-- <view wx:for = "{{content}}" wx:for-item="item" wx:key="item[9]" data-cont="{{item}}" bindtap='gotosightsee' > -->
+<swiper-item style="height:100%">
+<scroll-view scroll-y >
+<view class='page' wx:for="{{imageurl}}" wx:key="item[9]" wx:for-item="item"  data-cont="{{item}}"  bindtap='hadput' >
+<view style="background:url('{{item[4]}}');background-size:100% 100%;" class='yifabu'>
+<image id='tu1' src="{{item[5]}}"></image>
+<view class='title'>{{item[2]}}</view>
+<view  class='article'>
+<text>{{item[3]}}</text>
+</view>
+<image id='tu2' src='{{item[6]}}'></image>
+<text class ='title2'>{{item[2]}}</text>
+</view>
+
+</view>
+<!-- <image wx:for="{{imageurl}}" data-list="{{imageurl}}" data-src="{{list}}" wx:key="id"  src="{{item.src}}" data-index="{{index}}"wx:for-item="item" bindtap='imgYU'></image> -->
+
+</scroll-view>
+</swiper-item>
+
+<swiper-item style="height:100%">
+
+<scroll-view scroll-y >
+
+<view class='page' wx:for="{{imageurl2}}" wx:key="item[7]" wx:for-item="item"  data-cont="{{item}}" bindtap='hadsc'>
+<view style="background:url('{{item[4]}}');background-size:100% 100%;" class='yifabu'>
+<image id='tu1' src="{{item[5]}}"></image>
+<view class='title'>{{item[2]}}</view>
+<view  class='article'>
+<text>{{item[3]}}</text>
+</view>
+<image id='tu2' src='{{item[6]}}'></image>
+<text class='title2'>{{item[2]}}</text>
+</view>
+</view>
+</scroll-view>
+</swiper-item>
+
+<swiper-item style="height:100%">
+<scroll-view scroll-y >
+
+<view class='page' wx:for="{{imageurl3}}" wx:key="item[7]" wx:for-item="item"  data-cont="{{item}}"  bindtap='gotoindex2' >
+<view style="background:url('{{item[4]}}');background-size:100% 100%;" class='yifabu'>
+<image id='tu1' src="{{item[5]}}"></image>
+<view class='title'>{{item[1]}}</view>
+<view  class='article'>
+<text>{{item[3]}}</text>
+</view>
+<image id='tu2' src='{{item[6]}}'></image>
+<text class='title2'>{{item[1]}}</text>
+</view>
+</view>
+</scroll-view>
+</swiper-item>
+</swiper>
+</view>
+
+<view>
+<image src='https://mystoryinn.com/image/elements/%E6%B7%BB%E5%8A%A0%20(3).png' class='last-p'></image>
+<view class='focus-author' bindtap='jump'>关注的作者</view>
+</view>
+
+<view>
+<image src='https://mystoryinn.com/image/elements/团队 (1).png' class='last-p'></image>
+<view class='myfans' bindtap='jump2'>粉丝</view>
+</view>
+<view>
+<image src='https://mystoryinn.com/image/elements/%E8%8A%B1%20(1).png' class='last-p'></image>
+<view class='flower' bindtap='nowork'>花</view>
+</view>
+
+
+<!-- 需要使用 button 来授权登录 -->

@@ -1,0 +1,4 @@
+/* pages/picture/picture.wxss */
+.image{
+  width: 750rpx;
+}

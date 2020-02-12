@@ -1,0 +1,9 @@
+<text class='top'>--您暂时还没有被人关注哦，快去发故事收获更多粉丝吧--</text>
+<view class='A'  wx:for = "{{content}}" wx:for-item="item" wx:key="item[3]" data-cont="{{item}}" bindtap='quguan'>
+<image src = "{{item[2]}}" class='last-p'></image>
+<view class='author'>
+<view class='author-1'>{{item[4]}}<button class='author-button' >已关注</button></view>
+<view class='author-motto'>故事栈-作家</view>
+</view>
+</view>
+<!-- <view wx:for = "{{content}}" wx:for-item="item" wx:key="item[9]" data-cont="{{item}}" bindtap='gotosightsee' > -->

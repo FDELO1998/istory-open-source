@@ -1,0 +1,17 @@
+<!--pages/index4/index4.wxml-->
+
+<view class='page' style="background:url('{{background}}');background-size:100% 100%">
+<image src='{{begin}}' class='tu1'></image>
+<view class='text'>
+<view class='sign'>{{signtext}}</view>
+<view class='ttext' bindtap='usr'>{{title}}</view>
+
+<view class='ctext' >{{article}}</view>
+
+<image src='{{bottom}}' class='tu2'></image>
+
+</view>
+</view>
+<view class='null'></view>
+
+<view class='put'><button class='put-text' bindtap='put'>发布</button></view>

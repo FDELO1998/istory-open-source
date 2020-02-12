@@ -1,0 +1,52 @@
+{
+  "pages":[
+    
+   "pages/index/index",
+  "pages/authorize/authorize",
+  "pages/putswitch/putswitch",
+    "pages/index2/index2",
+    "pages/logs/logs" ,
+   "pages/index3/index3",
+    "pages/index4/index4",
+    "pages/picture/picture",
+    "pages/hadput/hadput",
+    "pages/fans/fans",
+   "Componet/select/select",
+   "pages/hadsc/hadsc",
+"pages/sightsee/sightsee"
+  
+  ],
+  "window":{
+   
+    "backgroundTextStyle":"dark",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "故事栈",
+    "navigationBarTextStyle":"black",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "color":"#444444",
+    "selectedColor":"#00D8A0",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath":"pages/img/shouye4.png",
+        "selectedIconPath":"pages/img/shouye3.png",
+        "text": "index"
+      },
+     {
+      "pagePath": "pages/index2/index2",
+      "iconPath": "pages/img/xiegushi.png",
+      "selectedIconPath": "pages/img/xiegushi.png",
+      "text": "Share"
+    },
+    {
+      "pagePath": "pages/index3/index3",
+      "iconPath": "pages/img/wode4.png",
+      "selectedIconPath": "pages/img/wode.png",
+      "text": "my"
+    }
+    ]
+  }
+}
+

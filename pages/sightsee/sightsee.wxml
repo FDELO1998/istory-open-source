@@ -1,0 +1,62 @@
+<canvas canvas-id='mycanvas' style='width:750rpx;height:{{textheight2}}' hidden='{{canvashidden}}'></canvas>
+<view class='page' style="background:url('{{background}}');background-size:100% 100%">
+
+<image src='{{begin}}' class='tu1'></image>
+
+
+<view class='text'>
+<view class='sign'>{{signtext}}</view>
+<view class='ttext'>{{title}}</view>
+<view class='ctext' id='ctext' >{{article}}</view>
+
+<image src='../img/diemian.png' class='music {{isplay?"rotateAn":""}}' bindtap='controlMusic'></image>
+<image src='../img/zhizhen.png' class='music2' ></image>
+ <image src='{{bottom}}' class='tu2'></image>
+</view>
+
+</view>
+
+<view class='view' >
+<view class='view-focus' bindtap='outshowmarkhidden'>
+<image src='{{avatarUrl}}' id='au'></image>
+
+<text class='author'>{{name}}</text>
+<button style="background-color:{{color}}" bindtap='changecolor'>{{guanzhu}}</button>
+</view>
+
+<view class='picture' bindtap='outshowmarkhidden'>
+
+<image src="../img/liulan.png" class='liulan'></image>
+<text style='float: left;margin-top: 10rpx;margin-left: 4px;' bindtap='shoucang'>收藏文章</text>
+
+<text style='float:right;margin-top:10rpx;z-index:5;margin-left: 4px;' bindtap='saveImageToPhotosAlbum'>保存文章美图</text>
+<image src="../img/xihuan.png" class='xiaoxi'></image>
+
+
+</view>
+
+<view class='picture-2'>
+<view bindtap='showmarkhidden'>
+<text>留言</text><text style='float:right'>评论</text><image src="../img/xiaoxi.png" style='margin-right: 4px;'></image>
+</view>
+<view class="mark hide{{showview?'show':''}}" >
+<form bindsubmit='putmarks'>
+<textarea placeholder='请发表你的评论' maxlength='150' focus='{{focus}}' bindtap='getfocus' bindinput='getcont' value="{{marks}}"></textarea>
+
+<button form-type="submit">提交</button>
+</form>
+</view>
+</view>
+
+<view class='evaluate' bindtap='outshowmarkhidden'>
+
+<view wx:for ="{{mark}}" wx:for-item="item" wx:key="item[0]" data-cont="{{item}}" class='name-1'>
+<text class='name'>{{item[4]}}{{biaodian}} </text><text >{{item[1]}}</text>
+</view>
+</view>
+</view>
+
+
+<view>
+
+</view>

@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "share",
+  "enablePullDownRefresh": true,
+  "usingComponents": {
+    "Select": "/Componet/select/select"
+  }
+}
