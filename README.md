@@ -7,19 +7,19 @@
 
 部分界面：
 
-首页
+<h3>首页</h3>
 <img src="https://github.com/FDELO1998/istory-open-source/raw/master/pages2/首页.png" width="50%">
 
-写故事
+<h3>写故事</h3>
 <img src="https://github.com/FDELO1998/istory-open-source/raw/master/pages2/写故事.png" width="50%">
 
-文章浏览
-<img src="https://github.com/FDELO1998/istory-open-source/raw/master/pages2/文章浏览.png" width="50%">
+<h3>文章浏览</h3>
+<img src="https://github.com/FDELO1998/istory-open-source/raw/master/pages2/文章浏览.jpg" width="50%">
 
-我的
+<h3>我的</h3>
 <img src="https://github.com/FDELO1998/istory-open-source/raw/master/pages2/我的.png" width="50%">
 
-粉丝
+<h3>粉丝</h3>
 <img src="https://github.com/FDELO1998/istory-open-source/raw/master/pages2/粉丝列表.png" width="50%">
 
 
