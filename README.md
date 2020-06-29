@@ -9,14 +9,18 @@
 
 首页
 <img src="https://github.com/FDELO1998/istory-open-source/raw/master/pages2/首页.png" width="50%">
+
 写故事
-![写故事](https://github.com/FDELO1998/istory-open-source/raw/master/pages2/写故事.png) 
+<img src="https://github.com/FDELO1998/istory-open-source/raw/master/pages2/写故事.png" width="50%">
+
 文章浏览
-![文章浏览](https://github.com/FDELO1998/istory-open-source/raw/master/pages2/文章浏览.jpg) 
+<img src="https://github.com/FDELO1998/istory-open-source/raw/master/pages2/文章浏览.png" width="50%">
+
 我的
-![我的](https://github.com/FDELO1998/istory-open-source/raw/master/pages2/我的.png)
+<img src="https://github.com/FDELO1998/istory-open-source/raw/master/pages2/我的.png" width="50%">
+
 粉丝
-![粉丝列表](https://github.com/FDELO1998/istory-open-source/raw/master/pages2/粉丝列表.png)
+<img src="https://github.com/FDELO1998/istory-open-source/raw/master/pages2/粉丝列表.png" width="50%">
 
 
 直接通过微信小程序开发平台或者QQ小程序开发平台打开。
